@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #1a1a1d;
+  --gray: #4e4e50;
+  --darkred: #6f2232;
+  --rose: #950740;
+  --red: #c3073f;
+  --font: #e3afbc;
+  --white: #e3e2df;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: var(--black);
+  color: white;
+}
+
+h1 {
+  font-family: "Pokemon Solid", sans-serif;
+  margin-top: 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border-radius: 15px;
+  background-color: var(--red);
+  border: 6px solid var(--darkred);
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.output {
+  min-width: 425px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-form {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+label {
+  font-family: "Pokemon Solid", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-input {
+  background-color: var(--white);
+  height: 30px;
+  margin-top: 5px;
+  margin-left: 60px;
+  width: 200px;
+}
+
+#search-button {
+  padding: 14px 0;
+  width: 80px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: var(--rose);
+  color: var(--font);
+  border: none;
+}
+
+.top-container {
+  margin-bottom: 10px;
+  min-width: 425px;
+  min-height: 320px;
+  padding: 10px;
+  background-color: var(--white);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  color: var(--darkred);
+}
+
+.name-and-id {
+  height: 28px;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.size {
+  height: 22px;
+  font-size: 0.85rem;
+}
+
+.sprite-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#types {
+  min-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom-container {
+  min-width: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  color: var(--font);
+}
+
+tbody {
+  display: block;
+  width: 300px;
+}
+
+tr {
+  width: 300px;
+}
+
+td,
+th {
+  min-width: 200px;
+  border: 3px solid var(--red);
+  text-align: center;
+  padding: 10px;
+  background-color: var(--darkred);
+}
+
+#pokemon-name {
+  text-transform: uppercase;
+}
+
+.pokemonSprite {
+  margin-top: 40px;
+  min-width: 180px;
+}
+
+.type {
+  padding: 5px;
+  border-radius: 9px;
+  margin-right: 5px;
+  color: var(--white);
+  border: 3px solid;
+}
+
+.normal {
+  background-color: #a8a878;
+  border-color: #6d6d4e;
+}
+
+.fire {
+  background-color: #f08030;
+  border-color: #9c531f;
+}
+
+.water {
+  background-color: #6890f0;
+  border-color: #445e9c;
+}
+
+.electric {
+  background-color: #f8d030;
+  border-color: #a1871f;
+}
+
+.grass {
+  background-color: #78c850;
+  border-color: #4e8234;
+}
+
+.ice {
+  background-color: #98d8d8;
+  border-color: #638d8d;
+}
+
+.fighting {
+  background-color: #c03028;
+  border-color: #7d1f1a;
+}
+
+.poison {
+  background-color: #a040a0;
+  border-color: #682a68;
+}
+
+.ground {
+  background-color: #e0c068;
+  border-color: #927d44;
+}
+
+.flying {
+  background-color: #a890f0;
+  border-color: #6d5e9c;
+}
+
+.psychic {
+  background-color: #f85888;
+  border-color: #a13959;
+}
+
+.bug {
+  background-color: #a8b820;
+  border-color: #6d7815;
+}
+
+.rock {
+  background-color: #b8a038;
+  border-color: #786824;
+}
+
+.ghost {
+  background-color: #705898;
+  border-color: #493963;
+}
+
+.dragon {
+  background-color: #7038f8;
+  border-color: #4924a1;
+}
+
+.dark {
+  background-color: #705848;
+  border-color: #49392f;
+}
+
+.steel {
+  background-color: #b8b8d0;
+  border-color: #787887;
+}
+
+.fairy {
+  background-color: #ee99ac;
+  border-color: #9b6470;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    min-width: 350px;
+    width: 350px;
+  }
+  #search-form {
+    width: 100px;
+    font-size: 10px;
+  }
+  label {
+    width: max-content;
+    margin-left: -40px;
+  }
+  #search-input {
+    width: 170px;
+    margin-left: -40px;
+  }
+  #search-button {
+    margin-top: 8px;
+    padding: 10px 0;
+    width: 80px;
+  }
+  .top-container {
+    min-width: 320px;
+  }
+  .bottom-container {
+    min-width: 160px;
+  }
+
+  th,
+  td {
+    min-width: 150px;
+  }
+}
