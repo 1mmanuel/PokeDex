@@ -1,3 +1,5 @@
 # PokeDex
 
-In this project, you'll build an app that will search for Pokémon by name or ID and display the results to the user. To retrieve the Pokémon data and images, you'll use freeCodeCamp's PokéAPI Proxy.
+Built a PokeDex website using freeCodeCamp's PokéAPI Proxy 
+
+`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon`
